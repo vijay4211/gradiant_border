@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #262626;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    /* border:4px solid #262626; */
+    border:4px solid transparent;
+    /* body is parent */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     /* imp */
+    /* x= -50% and y= -50% */
+    transform: translate(-50%, -50%);
+    /* imp */
+    border-image: linear-gradient(45deg,#ff0,#f0f,#f00,#00f,#0f0);
+    /* border-image: linear-gradient(-45deg,#ff0,#f0f); */
+    /* imp */
+    border-image-slice: 1;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+}
+
+
+
+
+
+
+/* 
+border-image: linear-gradient(0deg,#ff0,#f0f);:===>
+border-image: This is a CSS property that allows you to specify an image to be used as a border for an element. Instead of using a solid color or an image file for the border
+
+*/
+
+/* 
+border-image-slice: 1;======>
+border-image-slice: This is a CSS property that specifies how the border image should be sliced into nine sections (similar to a tic-tac-toe grid) so that it can be applied to the different parts of an element's border. The nine sections are used to define the corners, edges, and center of the border
+// if we not use 1 then we do not show square box
+*/
